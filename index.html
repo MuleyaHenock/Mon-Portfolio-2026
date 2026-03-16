@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -48,11 +50,14 @@
         <section>
             <h2>Mes Compétences</h2>
             <table>
-                <tr>
-                    <th>CATEGORIE</th>
-                    <th>COMPETENCES</th>
-                    <th>NIVAEU</th>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>CATEGORIE</th>
+                        <th>COMPETENCES</th>
+                        <th>NIVAEU</th>
+                    </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>Programation</td>
                     <td>HTML,CSS,javascript,python</td>
@@ -78,21 +83,22 @@
                     <td>Communication,Résolution de problèmes,Autonomie</td>
                     <td>Expert</td>
                 </tr>
+                </tbody>
             </table>
         </section>
     </main> 
     <footer>
-        <p>
-        2026 Henock. Tous droits réservés.
+        <p> 
+            &copy; 2026 Henock. Tous droits réservés.
         </p>
         <a href="https://www.linkedin.com/" target="_blank">
-            <img src="Images/Linkedin.jpg" alt="Linkedin"width=30>
+           <i class="fa-brands fa-linkedin"></i>
         </a>
          <a href="https://github.com/" target="_blank">
-            <img src="Images/GitHub.jpg" alt="GitHub"width=30>
+            <i class="fa-brands fa-github"></i>
         </a>
           <a href="https://twitter.com/" target="_blank">
-            <img src="Images/Twiter.jpg" alt="Twiter"width=30>
+            <i class="fa-brands fa-x-twitter"></i>
         </a>
     </footer>
 </body>

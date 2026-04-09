@@ -183,7 +183,7 @@ section h2::after {
     border-bottom: 1px solid var(--gris-clair);
 }
 
-.competences table tbody tr :nth-child(even) {
+.competences table body tr :nth-child(even) {
     background-color: #fdfdfd;
 }
 
@@ -225,9 +225,92 @@ footer a:hover {
     transform: translateY(-3px);
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    margin: 0;
+}
 
+.projets {
+    text-align: center;
+    padding: 50px 20px;
+}
 
+.projets h2 {
+    font-size: 32px;
+    color: #6c63ff;
+    margin-bottom: 30px;
+}
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+}
 
+.card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
 
+.card:hover {
+    transform: translateY(-5px);
+}
 
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--violet-doux);
+}
+
+.content {
+    padding: 15px;
+    text-align: left;
+}
+
+.content h3 {
+    color: #6c63ff;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.tags {
+    margin-top: 10px;
+}
+
+.tags span {
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 8px;
+    color: #6c63ff;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px 15px;
+} 
+
+.links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.links a:hover {
+    color: #6c63ff;
+}
